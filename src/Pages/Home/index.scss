@@ -1,0 +1,36 @@
+.text-zone {
+    .logo-title {
+        height: 47px;
+        background-color: transparent;
+        margin-left: 8px;
+        margin-bottom: -3px;
+    }
+
+    h1 {
+        &::before {
+            left: -18px;
+            top: -35px;
+        }
+
+        &::after {
+            line-height: 10px;
+            margin-left: 10px;
+            bottom: -10px;
+        }
+    }
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 11px;
+        color: #8D8D8D;
+
+        opacity: 0;
+        animation: fadeIn 1s 1.5 forwards;
+    }
+
+    // .flat-button {
+        // opacity: 0;
+        // animation: fadeIn 1s forwards;
+        // animation-delay: 4.5s;
+    // }
+}

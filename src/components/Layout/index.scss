@@ -1,0 +1,93 @@
+@import '../../vars.scss';
+@import '../../colors.scss';
+
+.page {
+    position: absolute;
+    width: calc(100% - $pages-left-margin);
+    height: 100%;
+    margin-left: calc(200px + $pages-left-margin);
+}
+
+.tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 6rem;
+    margin-block: 4rem;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 18px;
+    color: $secondary-dark;
+    opacity: 0.6;
+}
+
+.bottom-tags {
+    top: auto;
+    bottom: 0;
+
+    .bottom-tag-html {
+        margin-left: -3rem;
+    }
+}
+
+.container {
+    display: flex;
+
+    width: 100%;
+    min-height: 566px;
+    
+    will-change: contents;
+    
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    opacity: 0;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page {
+    h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: $primary-dark;
+        font-weight: 400;
+
+        position: relative;
+        line-height: 50px;
+        
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 18px;
+            color: $secondary-dark;
+            opacity: 0.6;
+
+            position: absolute;
+            left: -18px;
+            top: -35px;
+        }
+
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: $secondary-dark;
+            font-size: 18px;
+            line-height: 10px;
+            position: absolute;
+            margin-left: 10px;
+            bottom: -10px;
+            opacity: 0.6;
+        }
+    }
+}
+
+.text-zone {
+    width: fit-content;
+    margin-left: 6rem;
+    margin-block: auto;
+}

@@ -1,0 +1,98 @@
+@import '../../vars.scss';
+@import '../../colors.scss';
+
+header {
+    height: 100%;
+    width: 200px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-left: $pages-left-margin;
+    background-color: $primary;
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo-container {
+        img {
+            margin-inline: auto;
+            display: block;
+
+            &:first-child {
+                width: 80px;
+                margin-bottom: 0.5rem;
+            }
+            
+            &:last-child {
+                width: 80%;
+            }
+        }
+    }
+
+    nav {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        width: calc(100% - 2rem);
+        ul {
+            li {
+                a {
+                    display: flex;
+                    margin-block: 1rem;
+                    font-size: 16px;
+                    text-decoration: none;
+                    
+                    svg {
+                        padding-block: auto;
+                        color: $secondary;
+                        width: 20px;
+                    }
+                    
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        font-family: 'Coolvetica';
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                        margin-left: 1rem;
+                        color: $background-color;
+                        overflow: hidden;
+                        background: linear-gradient(to right, $secondary-light, $secondary-light 50%, $background-color 50%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-size: 200% 100%;
+                        background-position: 100%;
+                        transition: background-position 275ms ease;
+                        &:hover {
+                          background-position: 0 100%;
+                        }
+                      }
+                }
+            }
+        }
+    }
+
+    .brands-container {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        a {
+            color: $secondary;
+            font-size: 14px;
+            transition: color 100ms ease-in-out;
+
+            &:hover {
+                color: $background-color;
+            }
+        }
+    }
+}
