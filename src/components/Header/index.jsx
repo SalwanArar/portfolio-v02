@@ -9,23 +9,28 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 const navLinks = [
     {
         icon: faHouse,
-        text: 'HOME'
+        text: 'HOME',
+        to: '/'
     },
     {
         icon: faUser,
-        text: 'ABOUT'
+        text: 'ABOUT',
+        to: '/about'
     },
     {
         icon: faGear,
-        text: 'SKILLS'
+        text: 'SKILLS',
+        to: '/'
     },
     {
         icon: faLightbulb,
-        text: 'PROJECTS'
+        text: 'PROJECTS',
+        to: '/'
     },
     {
         icon: faEnvelope,
-        text: 'CONTACT'
+        text: 'CONTACT',
+        to: '/'
     },
 ];
 
@@ -41,7 +46,7 @@ function Header() {
                     {
                         navLinks.map((link, id) =>
                             <li key={id}>
-                                <NavLink className='nav-item'>
+                                <NavLink to={link.to} className='nav-item'>
                                     <FontAwesomeIcon icon={link.icon}/>
                                     <span >{link.text}</span>
                                 </NavLink>
