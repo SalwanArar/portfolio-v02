@@ -3,7 +3,7 @@
 
 .page {
     position: absolute;
-    width: calc(100% - $pages-left-margin);
+    width: calc(100% - $pages-left-margin - 200px);
     height: 100%;
     margin-left: calc(200px + $pages-left-margin);
 }

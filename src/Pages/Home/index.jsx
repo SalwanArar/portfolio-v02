@@ -2,7 +2,8 @@ import { useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import './index.scss';
 import { useEffect } from 'react';
-import Logo from '../../assets/image/logo.png'; 
+import Logo from '../../assets/image/logo.png';
+import ProfilePic from '../../assets/image/pic.png';
 
 
 function HomePage() {
@@ -57,7 +58,7 @@ function HomePage() {
                     <span className={`${letterClass} _14`}>I</span>
                     <span className={`${letterClass} _15`}>'</span>
                     <span className={`${letterClass} _16`}>m</span>
-                    <img src={ Logo } className='logo-title'/>
+                    <img src={ Logo } alt='small logo' className='logo-title'/>
                     <AnimatedLetters
                     letterClass={ letterClass }
                     strArray={ nameArray }
@@ -69,8 +70,9 @@ function HomePage() {
                     idx={22}/>
                 </h1>
                 <h2>Software Engineer | Flutter Developer</h2>
-                <a className='flat-button'>Download CV</a>
+                <a href='#_blank' className='flat-button'>Download CV</a>
             </div>
+            <img src={ ProfilePic } alt='personal pic' className='profile-pic'/>
         </div>
     );
 }

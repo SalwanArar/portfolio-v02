@@ -51,10 +51,10 @@ function Header() {
                 </ul>
             </nav>
             <div className='brands-container'>
-                <a href='#_blank'>
+                <a href='https://github.com/SalwanArar' rel="noreferrer" target='_blank'>
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href='#_blank'>
+                <a href='https://www.linkedin.com/in/SalwanArar' rel="noreferrer" target='_blank'>
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
             </div>

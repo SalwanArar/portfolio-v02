@@ -36,7 +36,7 @@ ul {
 .flat-button {
   color: $secondary-dark;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 4px;
   font-family: sans-serif;
   text-decoration: none;
@@ -46,6 +46,8 @@ ul {
   float: left;
   animation: fadeInAnimation 1.5s 1.8s backwards;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   
   transition: all 400ms ease;
 
