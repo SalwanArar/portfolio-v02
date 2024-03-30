@@ -4,7 +4,7 @@ import './index.scss';
 import { useEffect } from 'react';
 import Logo from '../../assets/image/logo.png';
 import ProfilePic from '../../assets/image/pic.png';
-
+import { motion } from 'framer-motion';
 
 function HomePage() {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -48,7 +48,16 @@ function HomePage() {
     }, []);
 
     return (
-        <div className="container portfolio-page">
+        <motion.div className="container portfolio-page"
+        // initial={{ transform: 'translateY(-50%) scale(0.7)' }}
+        // animate={{ transform: 'translateY(-50%) scale(1)' }}
+        // transition={{ type: 'spring' }}
+        // exit={{ transform: 'translateY(-50%) scale(0.9)', x: -1000 }}
+        // initial={{ translateY: '-50%', scale: 0.7, translateX: '100%' }}
+        // animate={{ translateY: '-50%', scale: 1, translateX: '0' }}
+        // transition={{ type: 'spring', bounce: 0.1 }}
+        // exit={{ scale: 0 }}
+        >
             <div className='text-zone'>
                 <h1>
                     <span className={letterClass}>H</span>
@@ -73,7 +82,7 @@ function HomePage() {
                 <a href='#_blank' className='flat-button'>Download CV</a>
             </div>
             <img src={ ProfilePic } alt='personal pic' className='profile-pic'/>
-        </div>
+        </motion.div>
     );
 }
 

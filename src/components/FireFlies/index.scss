@@ -1,0 +1,19 @@
+.stars-container {
+    z-index: -1;
+    width: 50%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    right: 4rem;
+    transform: translateY(-50%);
+    
+    .pixel {
+      display: none;
+      height: 4px;
+      width: 4px;
+      border-radius: 2px;
+      position: absolute;
+      background-color: rgb(128,128,128);
+    }
+}

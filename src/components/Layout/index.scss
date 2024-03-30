@@ -23,15 +23,13 @@
 .bottom-tags {
     top: auto;
     bottom: 0;
-
+    
     .bottom-tag-html {
         margin-left: -3rem;
     }
 }
 
 .container {
-    display: flex;
-
     width: 100%;
     min-height: 566px;
     
@@ -79,15 +77,22 @@
             font-size: 18px;
             line-height: 10px;
             position: absolute;
-            margin-left: 10px;
-            bottom: -10px;
+            left: -18px;
+            bottom: -25px;
             opacity: 0.6;
         }
     }
 }
 
 .text-zone {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    min-width: 270px;
+    transform: translateY(-50%);
+
     width: fit-content;
+    max-width: 500px;
     margin-left: 6rem;
     margin-block: auto;
 }
