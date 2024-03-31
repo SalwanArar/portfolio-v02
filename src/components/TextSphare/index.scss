@@ -1,0 +1,11 @@
+@import '../../colors.scss';
+
+.sphare {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $secondary-dark;
+    font-weight: bold;
+    font-size: larger;
+    text-shadow: 0 0 30px $secondary-dark, 0 0 20px $secondary-light;
+}

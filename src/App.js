@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './Pages/Home';
 import AboutPage from './Pages/About';
+import SkillsPage from './Pages/Skills';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />}/>
           <Route path='/about' element={<AboutPage />}/>
+          <Route path='/skills' element={<SkillsPage />}/>
         </Route>
       </Routes>
     </AnimatePresence>

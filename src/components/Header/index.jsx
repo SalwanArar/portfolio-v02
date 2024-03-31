@@ -20,7 +20,7 @@ const navLinks = [
     {
         icon: faGear,
         text: 'SKILLS',
-        to: '/'
+        to: '/skills'
     },
     {
         icon: faLightbulb,
