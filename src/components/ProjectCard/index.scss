@@ -1,0 +1,79 @@
+@import '../../colors.scss';
+
+.project-card {
+    max-width: 300px;
+    padding: 16px;
+    
+    color: $background-color;
+    background-color: $primary-light;
+    background: linear-gradient(0deg, $primary 0%, $primary-dark 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+
+    border: 1px solid #ffffff22;
+    border-radius: 36px;
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        transition: width 1s ease;
+    }
+
+    .card-discription-content {
+        padding-right: 4px;
+
+        overflow-y: scroll;
+        scrollbar-color: $secondary-light transparent;
+        scrollbar-width: thin;
+        scrollbar-gutter: revert;
+        
+        p {
+            color: #a89ec9;
+        }
+    }
+    
+    hr {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #88888855;
+      margin-block: 1rem;
+    }
+        
+    .card-brands {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        svg {
+            font-size: 24px;
+        }
+    }
+
+    ::before{
+        position: fixed;
+        content: "";
+        box-shadow: 0 0 100px 40px #ffffff08;
+        top: -10%;
+        left: -100%;
+        transform: rotate(-45deg);
+        height: 60rem;
+        transition: .7s all;
+    }
+    
+    &:hover {
+        border: 1px solid #ffffff44;
+        box-shadow: 0 7px 50px 10px #000000aa;
+        filter: brightness(1.3);
+
+        ::before{
+            filter: brightness(.5);
+            top: -100%;
+            left: 200%;
+        }
+    }
+}

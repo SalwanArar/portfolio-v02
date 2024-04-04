@@ -25,7 +25,7 @@ const navLinks = [
     {
         icon: faLightbulb,
         text: 'PROJECTS',
-        to: '/'
+        to: '/projects'
     },
     {
         icon: faEnvelope,

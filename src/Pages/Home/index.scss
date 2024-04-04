@@ -13,6 +13,7 @@
         }
 
         h1 {
+            font-size: 53px;
             &::before {
                 left: -18px;
                 top: -35px;
@@ -37,8 +38,11 @@
 
     .profile-pic {
         position: absolute;
+        z-index: -1;
         top: 50%;
         right: 4rem;
+        width: 100%;
+        max-width: 300px;
         transform: translateY(-50%);
     }
 }
