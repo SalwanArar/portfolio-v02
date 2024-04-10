@@ -30,7 +30,7 @@ const navLinks = [
     {
         icon: faEnvelope,
         text: 'CONTACT',
-        to: '/'
+        to: '/contact'
     },
 ];
 
