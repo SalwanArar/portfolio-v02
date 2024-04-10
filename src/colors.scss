@@ -8,3 +8,16 @@ $tertiary: #fefae0ff;
 $secondary-light: #e3b37eff;
 $secondary: #dda15eff;
 $secondary-dark: #bc6c25ff;
+
+:export {
+    backgroundColor: $background-color;
+    textColor: $text-color;
+
+    primaryLight: $primary-light;
+    primary: $primary;
+    primaryDark: $primary-dark;
+
+    secondaryLight: $secondary-light;
+    secondary: $secondary;
+    secondaryDark: $secondary-dark;
+}
